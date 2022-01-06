@@ -1,0 +1,36 @@
+{% extends "myblog/base.html" %}
+
+{% block title %} contact{% endblock title %}
+
+{% block body %}
+
+<h1>this is contact  page<h1>
+
+<form method="post" action="">{% csrf_token %}
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" name="myemail">
+    
+  </div>
+
+    <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">full name</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" name="myname">
+    
+  </div>
+
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" name="myaddress">
+    
+  </div>
+
+
+
+
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{% endblock body %}
